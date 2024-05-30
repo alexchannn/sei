@@ -356,6 +356,11 @@ nav .hamburger span {
    transition: ease-in 200ms;
 }
 
+.squad-section .squad-content .card .card-button button a {
+   color: white;
+   text-decoration: none;
+}
+
 .squad-section .squad-content .card .card-button button:hover {
    background-color: var(--hover);
 }
