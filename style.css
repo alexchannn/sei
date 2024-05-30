@@ -360,6 +360,133 @@ nav .hamburger span {
    background-color: var(--hover);
 }
 
+/* Squad Details Section */
+
+.squad-details-section {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 4rem;
+}
+
+.squad-details-section .squad-details-content {
+   min-width: 16rem;
+}
+
+.squad-details-section .squad-details-content > * {
+   max-width: 44rem;
+}
+
+.squad-details-section .squad-details-content .logo {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   margin-bottom: 2rem;
+}
+
+.squad-details-section .squad-details-content .logo img {
+   width: 6rem;
+}
+
+.squad-details-section .squad-details-content .logo h1 {
+   font-size: 2rem;
+   font-weight: 800;
+}
+
+.squad-details-section .squad-details-content .squad-details-info p {
+   margin-bottom: 2.5rem;
+}
+
+.squad-details-section .squad-details-content .squad-details-info .achievement {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+.squad-details-section .squad-details-content .squad-details-info .achievement ul li {
+   margin-left: 1.5rem;
+}
+
+.squad-details-section .squad-details-image {
+   max-width: 40rem;
+   background-color: #0f172a;
+}
+
+.squad-details-section .squad-details-image img {
+   display: block;
+   max-width: 100%;
+   margin: auto;
+}
+
+/* Roster Section */
+
+.roster-section {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 8rem;
+}
+
+.roster-section .roster-title {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 1.2rem;
+   margin-bottom: 6rem;
+}
+
+.roster-section .roster-title h1 {
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.roster-section .roster-title .socials-media {
+   display: flex;
+   gap: 1rem;
+}
+
+.roster-section .roster-title .socials-media img {
+   width: 2rem;
+}
+
+.roster-section .roster-content {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+   gap: 4rem;
+}
+
+.roster-section .roster-content .roster-card {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 2rem;
+   position: relative;
+}
+
+.roster-section .roster-content .roster-card img {
+   width: 90%;
+   aspect-ratio: 1;
+   object-fit: cover;
+   border-bottom: 2px solid var(--text);
+}
+
+.roster-section .roster-content .roster-card h1 {
+   font-size: 1.4rem;
+   padding: 0.5rem 4.5rem;
+   border: 2px solid var(--text);
+   background-color: white;
+   border-radius: 0.8rem;
+   position: absolute;
+   bottom: 2rem;
+}
+
 /* Gallery Section */
 
 .gallery-section {
@@ -517,6 +644,25 @@ footer .footer-wrapper .footer-copyright {
 
    .about-section .about-image img {
       border-radius: 0.4rem;
+   }
+}
+
+@media (max-width: 1200px) {
+   .squad-details-section {
+      height: 100%;
+      padding-top: 10rem;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 4rem;
+   }
+
+   .squad-details-section .squad-details-content .logo {
+      justify-content: center;
+   }
+
+   .squad-details-section .squad-details-content .squad-details-info .achievement {
+      max-width: 18rem;
+      margin: auto;
    }
 }
 
