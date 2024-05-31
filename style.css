@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
 /* CSS Reset */
 
 * {
@@ -180,6 +178,19 @@ nav .hamburger span {
    display: block;
    max-width: 100%;
    margin: auto;
+   animation: floating 3s ease infinite;
+}
+
+@keyframes floating {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(20px);
+   }
+   100% {
+      transform: translateY(0);
+   }
 }
 
 /* About Section */
@@ -312,6 +323,7 @@ nav .hamburger span {
    margin-bottom: 1rem;
    display: grid;
    place-items: center;
+   transition: ease-in 200ms;
 }
 
 .squad-section .squad-content .card:nth-child(1) .card-img {
@@ -330,8 +342,17 @@ nav .hamburger span {
    background-color: #2cb5ff;
 }
 
+.squad-section .squad-content .card:hover .card-img {
+   background-color: var(--text);
+}
+
 .squad-section .squad-content .card .card-img img {
    width: 6.5rem;
+   transition: ease-in 200ms;
+}
+
+.squad-section .squad-content .card:hover .card-img img {
+   scale: 1.1;
 }
 
 .squad-section .squad-content .card .card-content {
@@ -354,6 +375,11 @@ nav .hamburger span {
    color: white;
    margin-right: 0.6rem;
    transition: ease-in 200ms;
+}
+
+.squad-section .squad-content .card .card-button button a {
+   color: white;
+   text-decoration: none;
 }
 
 .squad-section .squad-content .card .card-button button:hover {
